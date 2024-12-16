@@ -1,3 +1,4 @@
+
 /* --- Global Styling --- */
 body {
   margin: 0;
@@ -82,20 +83,19 @@ body {
     color: #007bff; 
 }
 
-/* styles.css */
 
 /* Hero Banner  Parallax */
 #hero-banner {
   background: url('images/hero-2.jpg') no-repeat center center fixed;
   background-size: cover;
-  height: 100vh; /* Full screen height */
+  height: 100vh; 
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Dark Overlay  */
+
 #hero-banner::before {
   content: '';
   position: absolute;
@@ -103,11 +103,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  background: rgba(0, 0, 0, 0.6); 
   z-index: 1;
 }
 
-/* Content inside the banner */
+/* Content inside  banner */
 #hero-banner .container {
   position: relative;
   z-index: 2; /* Above the overlay */
@@ -139,7 +139,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Keyframes for animation */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -151,7 +151,7 @@ body {
   }
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
   #hero-banner h1 {
     font-size: 2rem;
@@ -168,7 +168,7 @@ body {
 }
 
 
-/* --- Badge Styling --- */
+/* --- Badge Style --- */
 .badge {
   display: inline-block;
   background: linear-gradient(135deg, #ff7e5f, #feb47b);
@@ -211,8 +211,6 @@ body {
 }
 
 
-
-/* --- Section Styling --- */
 .services-section {
   position: relative;
   padding: 100px 20px;
@@ -233,7 +231,7 @@ body {
 
 /* --- Section Content --- */
 .section-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   z-index: 1;
 }
 
@@ -308,7 +306,7 @@ body {
 
 /* Titles */
 .section-head h2{
-  font-size: 46px;
+  font-size: 36px;
   font-weight: 200;
 }
 
@@ -321,7 +319,6 @@ body {
 /* Background Enhancements */
 #about {
     position: relative;
-    /* background: linear-gradient(135deg, #0d0d2b, #0d0d2b); Subtle gradient */
     overflow: hidden;
 }
   
@@ -343,7 +340,7 @@ body {
     left: -50px;
 }
   
-  /* Bottom Right Circle */
+  
 #about::after {
     width: 400px;
     height: 400px;
@@ -351,28 +348,28 @@ body {
     right: -100px;
 }
   
-  /* Shadow for Depth */
+  
 #about .about-container {
     position: relative;
     z-index: 2; /* Content above decorative elements */
 }
   
-  /* Optional Separator (Wave Style) */
+  
 #about::before {
     background-image: radial-gradient(circle, rgba(0, 123, 255, 0.1) 20%, transparent 70%);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-  /* Description */
+  
 .service-description {
     font-size: 1rem;
-    color: #6c757d; /* Gris clair */
+    color: #6c757d;
 }
 
 .ctr-section{
   position: relative;
-  background-image: url('images/ctr.jpg'); /* Remplace par ton image */
+  background-image: url('images/ctr.jpg'); 
   background-size: cover;
   background-position: center;
   padding: 100px 20px;
@@ -387,7 +384,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Filtre noir */
+  background: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 
@@ -444,7 +441,7 @@ body {
   margin: 8px;
 }
 
-  /* Styling for the Portfolio Section */
+  /* Style Portfolio Section */
 
 .portfolio-title{
   font-size: 46px;
@@ -471,41 +468,41 @@ body {
 
 
 
- /* Section Styling */
+ /* Section logo  */
  .client-logo-section {
-  background-color: #007bff; /* Fond clair */
+  background-color: #007bff; 
   padding: 50px 0;
-  overflow: hidden; /* Cache les logos hors écran */
+  overflow: hidden; 
   position: relative;
 }
 
 /* Animation des logos */
 .logo-container {
   display: flex;
-  gap: 50px; /* Espacement entre les logos */
-  animation: scrollLogos 20s linear infinite; /* Animation continue */
+  gap: 50px; 
+  animation: scrollLogos 20s linear infinite; 
 }
 
 /* Logos */
 .logo-container img {
-  width: 150px; /* Largeur des logos */
+  width: 150px; 
   height: auto;
-  filter: grayscale(100%); /* Logos en noir et blanc */
+  filter: grayscale(100%); 
   transition: filter 0.3s ease;
 }
 
-/* Couleur au survol */
+
 .logo-container img:hover {
-  filter: grayscale(0%); /* Retire le noir et blanc */
+  filter: grayscale(0%); 
 }
 
 /* Keyframes pour l'animation */
 @keyframes scrollLogos {
   from {
-    transform: translateX(100%); /* Départ */
+    transform: translateX(100%); 
   }
   to {
-    transform: translateX(-100%); /* Fin hors */
+    transform: translateX(-100%); 
   }
 }
 
@@ -535,7 +532,7 @@ body {
 
 
 
-/* Parallax Section */
+/* Effet Parallax Section */
 .parallax {
   background: url('images/happy-people.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -550,7 +547,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Overlay */
+  background: rgba(0, 0, 0, 0.6); 
   z-index: 1;
   perspective: 1000;
 }
@@ -560,19 +557,19 @@ body {
   z-index: 2;
 }
 
-/* Section Title */
+/* Section Title textimonials */
 #testimonials h2 {
   font-size: 2.8rem;
-  color: #ffdd57; /* Warm yellow to contrast */
+  color: #ffdd57; 
   margin-bottom: 20px;
 }
 
 #testimonials p.lead {
-  color: #f8f9fa; /* Lighter text */
+  color: #f8f9fa; 
   font-size: 1.2rem;
 }
 
-/* Testimonial Styling */
+/* Testimonial Style */
 .testimonial-img {
   width: 100px;
   height: 100px;
@@ -594,7 +591,7 @@ body {
   line-height: 1.6;
 }
 
-/* Footer for Testimonial */
+/* Footer  Testimonial */
 .blockquote-footer {
   color: #f8f9fa;
   font-size: 0.9rem;
@@ -628,13 +625,13 @@ body {
 /* Section Blog */
 .blog-section {
   padding: 50px 20px;
-  background-color: #f8f9fa; /* Fond clair */
 }
 
 
 .blog-card {
   border: none;
   border-radius: 10px;
+  background-color: #007bff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -659,20 +656,20 @@ body {
 .blog-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #212529;
+  color: #fff;
   margin-bottom: 10px;
 }
 
 .blog-text {
   font-size: 1rem;
-  color: #6c757d; /* Gris clair */
+  color: #ffffff; /* Gris clair */
   margin-bottom: 20px;
 }
 
 
 .blog-btn {
-  background-color: #007bff;
-  color: white;
+  background-color: #fff;
+  color: #007bff;
   border-radius: 50px;
   padding: 10px 20px;
   text-decoration: none;
@@ -680,7 +677,8 @@ body {
 }
 
 .blog-btn:hover {
-  background-color: #0056b3;
+  background-color: #fff;
+  color:#0d0d2d
 }
 
 .blog-icons {
@@ -789,25 +787,137 @@ body {
   }
 }
 
-/* Styles par défaut pour les titres de section */
-.section-title {
-  font-size: 3rem; /* Taille par défaut */
-  margin-bottom: 20px;
+
+
+/* From  */ 
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
 }
 
-/* Media query pour les écrans moyens (tablettes) */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2.5rem; /* Réduire la taille de la police */
-    margin-bottom: 15px; /* Ajuster la marge */
+.title {
+  font-size: 28px;
+  color: royalblue;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before,.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: royalblue;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: royalblue;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: royalblue;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+}
+
+.submit:hover {
+  background-color: rgb(56, 90, 194);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
   }
 }
-
-/* Media query pour les petits écrans (mobiles) */
-@media (max-width: 576px) {
-  .section-title {
-    font-size: 2rem; /* Réduire encore la taille de la police */
-    margin-bottom: 10px; /* Ajuster la marge */
-  }
-}
-
